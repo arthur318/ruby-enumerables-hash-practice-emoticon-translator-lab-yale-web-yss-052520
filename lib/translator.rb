@@ -29,7 +29,7 @@ def get_japanese_emoticon(library, emoticon)
   if japanese == nil
     return 'Sorry, that emoticon was not found'
   else
-    japanese
+    return japanese
   end
 end
 
