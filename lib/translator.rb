@@ -17,7 +17,7 @@ pp load_library("./lib/emoticons.yml")
 
 # Method takes Western emoticon and returns Japanese emoticon
 def get_japanese_emoticon(library, emoticon)
-  hash <- load_library(library)
+  emoticon1 <- load_library(library)
   result <- hash.select do |k,v|
     v[:english] == emoticon
   end
