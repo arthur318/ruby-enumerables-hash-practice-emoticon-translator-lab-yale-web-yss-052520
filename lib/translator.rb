@@ -11,6 +11,7 @@ def load_library(library)
   final_results
 end
 
+pp load_libary("./lib/emoticons.yml")
 
 # Method takes Western emoticon and returns Japanese emoticon
 def get_japanese_emoticon(library, emoticon)
