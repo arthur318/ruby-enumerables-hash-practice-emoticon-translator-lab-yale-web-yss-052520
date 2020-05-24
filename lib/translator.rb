@@ -40,6 +40,7 @@ def get_english_meaning(library, emoticon)
     if v[:japanese] == emoticon
       return k
     end
+  end
   if english == ""
     return 'Sorry, that emoticon was not found'
   end
