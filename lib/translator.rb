@@ -21,6 +21,9 @@ def get_japanese_emoticon(library, emoticon)
   result[result.keys][:japanese]
 end
 
+get_japanese_emoticon()
+
+
 # Method takes Japanese emoticon and returns name in English
 def get_english_meaning(library, emoticon)
   hash <- load_library(library)
