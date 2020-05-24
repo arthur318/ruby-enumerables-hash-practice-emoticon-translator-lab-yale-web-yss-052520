@@ -21,7 +21,7 @@ def get_japanese_emoticon(library, emoticon)
   result = hash.select do |k,v|
     v[:english] == emoticon
   end
-  result[result.keys][:japanese]
+  # result[result.keys][:japanese]
 end
 
 pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
