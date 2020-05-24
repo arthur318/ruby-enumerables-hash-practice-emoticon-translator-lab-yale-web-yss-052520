@@ -39,7 +39,10 @@ def get_english_meaning(library, emoticon)
   hash.each do |k,v|
     if v[:japanese] == emoticon
       return k
-      
+    end
+  if english == ""
+    return 'Sorry, that emoticon was not found'
+  end
 end
 
 
