@@ -25,7 +25,7 @@ def get_japanese_emoticon(library, emoticon)
       return japanese = v[:japanese]
     end
   end
-  if japanese = ""
+  if japanese == ""
     return 'Sorry, that emoticon was not found'
 end
 
