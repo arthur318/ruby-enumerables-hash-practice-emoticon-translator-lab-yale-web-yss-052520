@@ -11,6 +11,8 @@ def load_library(library)
   final_results
 end
 
+#     a[k.to_sym] = {:english => v[0], :japanese => v[1]}
+
 pp load_library("./lib/emoticons.yml")
 
 # Method takes Western emoticon and returns Japanese emoticon
