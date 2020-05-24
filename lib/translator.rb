@@ -23,10 +23,10 @@ def get_japanese_emoticon(library, emoticon)
   hash.each do |k,v|
     if v[:english] == emoticon
       return japanese = v[:japanese]
-    else
-      japanese = 'Sorry, that emoticon was not found'
     end
   end
+  if japanese = ""
+    return 'Sorry, that emoticon was not found'
 end
 
 pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
