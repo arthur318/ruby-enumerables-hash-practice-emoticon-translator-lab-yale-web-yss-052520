@@ -21,7 +21,7 @@ def get_japanese_emoticon(library, emoticon)
   result[result.keys][:japanese]
 end
 
-get_japanese_emoticon("./lib/emoticons.yml", ":)")
+pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
 
 
 # Method takes Japanese emoticon and returns name in English
