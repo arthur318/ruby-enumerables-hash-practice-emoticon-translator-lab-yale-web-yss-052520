@@ -34,7 +34,7 @@ pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
 
 # Method takes Japanese emoticon and returns name in English
 def get_english_meaning(library, emoticon)
-  hash <- load_library(library)
+  hash = load_library(library)
   english = ""
   hash.each do |k,v|
     if v[:japanese] == emoticon
