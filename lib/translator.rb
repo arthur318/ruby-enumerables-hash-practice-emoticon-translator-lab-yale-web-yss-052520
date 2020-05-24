@@ -26,6 +26,7 @@ def get_japanese_emoticon(library, emoticon)
     end
   end
   # result[result.keys][:japanese]
+  japanese
 end
 
 pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
