@@ -24,15 +24,9 @@ def get_japanese_emoticon(library, emoticon)
     if v[:english] == emoticon
       return japanese = v[:japanese]
     else
-      return 'Sorry, that emoticon was not found'
+      japanese = 'Sorry, that emoticon was not found'
     end
-  end
-  # result[result.keys][:japanese]
-  if japanese == nil
-    return 'Sorry, that emoticon was not found'
-  else
-    return japanese
-  end
+  en
 end
 
 pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
