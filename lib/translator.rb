@@ -6,7 +6,7 @@ require 'pry'
 def load_library(library)
   emoticon1 = YAML.load_file(library)
   final_results = emoticon1.each_with_object({}) do |(k,v), a|
-    a[k.to_sym] = {:english => v[0], :japanese => v[1]}
+    a[k] = {:english => v[0], :japanese => v[1]}
   end
   final_results
 end
