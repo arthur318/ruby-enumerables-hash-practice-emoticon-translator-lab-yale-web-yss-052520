@@ -26,10 +26,11 @@ def get_japanese_emoticon(library, emoticon)
     end
   end
   # result[result.keys][:japanese]
-  japanese
   if japanese == nil
     return 'Sorry, that emoticon was not found'
-    
+  else
+    japanese
+  end
 end
 
 pp get_japanese_emoticon("./lib/emoticons.yml", ":)")
